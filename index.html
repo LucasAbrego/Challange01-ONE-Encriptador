@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Encriptador - Lucas Abrego</title>
+</head>
+<body>
+  <main>
+    <section>
+        <img src="imagenes/logoAlura.png" alt="Logo Alura" class="logoAlura"> 
+        <textarea name="textoEntrada" id="txtEntrada" cols="50" rows="9" placeholder="Ingrese el texto aquí" onkeypress="return validarCaracteres(event)"></textarea>
+        <div>
+            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+            <input type="button" class="botonEncriptar" value="Encriptar" onclick="encriptarTexto()">
+            <input type="button" class="botonDesencriptar" value="Desencriptar" onclick="desencriptarTexto()">        
+        </div>    
+    </section>
+    <section>
+        <textarea name="textoSalida" id="txtSalida" cols="22" rows="13"  readonly="true"></textarea>
+       <div>
+            <input type="button" id="btnCopiar" value="Copiar" onclick="copiarTexto()">
+        </div>
+    </section>  
+  </main>
+</body>
+</html>
